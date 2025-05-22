@@ -21,7 +21,7 @@
             bindings = <
                 &none       &none       &none       &none       &bootloader
                 &none       &none       &none       &none       &none
-                &bt BT_CLR  &bt BT_SEL0 &bt BT_SEL1 &bt BT_SEL2 &none   
+                BT_CLR      &bt BT_SEL0 &bt BT_SEL1 &bt BT_SEL2 &none   
                 &none       &none       &none       &none       &none
                                         &none       &none       &none
                                                     &none       &none
