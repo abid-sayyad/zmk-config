@@ -6,22 +6,24 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer{
+        layers = <&default_layer_label &bt_layer_label>;
+
+        default_layer_label: default_layer { 
             bindings = <
-                &kp 1    &kp 2      &kp 3      &kp 4      &mo 1
-                &kp Q    &kp W      &kp E      &kp R      &kp T
-                &kp A    &kp S      &kp D      &kp Y      &kp I
-                &kp LSFT &kp COMMA &kp DOT    &kp SLASH  &kp QMARK
-                                  &kp LCTRL   &kp SPACE  &kp BSPC
-                                              &kp LALT   &kp DEL
+                &kp N1    &kp N2      &kp N3      &kp N4      &mo &bt_layer_label // Refer to bt_layer by its label
+                &kp Q     &kp W       &kp E       &kp R       &kp T
+                &kp A     &kp S       &kp D       &kp Y       &kp I
+                &kp LSFT  &kp COMMA   &kp DOT     &kp SLASH   &kp QMARK
+                                  &kp LCTRL   &kp SPACE   &kp BSPC
+                                              &kp LALT    &kp DEL
             >;
         };
 
-        bt_layer{
+        bt_layer_label: bt_layer { 
             bindings = <
                 &none       &none        &none        &none        &bootloader
                 &none       &none        &none        &none        &none
-                &bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none   
+                &bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none
                 &none       &none        &none        &none        &none
                                          &none        &none        &none
                                                       &none        &none
