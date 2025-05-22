@@ -1,0 +1,31 @@
+#include <behaviours.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+                &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp KP_N4   &mo 1
+                &kp KP_Q   &kp KP_W   &kp KP_E   &kp KP_R   &kp KP_T
+                &kp KP_A   &kp KP_S   &kp KP_D   &kp KP_Y   &kp KP_I
+                &kp KP_LSHFT   &kp KP_COMMA   &kp KP_DOT   &kp KP_FSLH   &kp KP_QMARK
+                                                    &kp KP_LCTRL   &kp KP_SPACE   &kp KP_BSPC
+                                                                &kp KP_LALT   &kp KP_DEL
+            >;
+        };
+
+        bt_layer {
+            bindings = <
+                &none   &none   &none   &none   &bootloader
+                &none   &none   &none   &none   &bt BT_CLR
+                &none   &none   &bt BT_SEL0   &bt BT_SEL1   &bt BT_SEL2
+                &none   &none   &none   &none   &none
+                                                    &none   &none   &none
+                                                                &none   &none
+            >;
+        };
+    };
+};

@@ -1,0 +1,5 @@
+if SHIELD_CUSSKEYS
+config ZMK_KEYBOARD_NAME
+    default "cusskeys"
+
+endif
