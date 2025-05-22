@@ -5,27 +5,28 @@
 / {
     keymap {
         compatible = "zmk,keymap";
+        layers = <&default_layer &bt_layer>;
+    };
 
-        default_layer {
-            bindings = <
-                &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp KP_N4   &mo 1
-                &kp KP_Q   &kp KP_W   &kp KP_E   &kp KP_R   &kp KP_T
-                &kp KP_A   &kp KP_S   &kp KP_D   &kp KP_Y   &kp KP_I
-                &kp KP_LSHFT   &kp KP_COMMA   &kp KP_DOT   &kp KP_FSLH   &kp KP_QMARK
-                                                    &kp KP_LCTRL   &kp KP_SPACE   &kp KP_BSPC
-                                                                &kp KP_LALT   &kp KP_DEL
-            >;
-        };
+    default_layer: default_layer {
+        bindings = <
+            &kp 1    &kp 2      &kp 3      &kp 4      &mo 1
+            &kp Q    &kp W      &kp E      &kp R      &kp T
+            &kp A    &kp S      &kp D      &kp Y      &kp I
+            &kp LSFT &kp COMMA &kp DOT    &kp SLASH  &kp QUESTION
+                              &kp LCTRL   &kp SPACE  &kp BSPC
+                                          &kp LALT   &kp DEL
+        >;
+    };
 
-        bt_layer {
-            bindings = <
-                &none   &none   &none   &none   &bootloader
-                &none   &none   &none   &none   &bt BT_CLR
-                &none   &none   &bt BT_SEL0   &bt BT_SEL1   &bt BT_SEL2
-                &none   &none   &none   &none   &none
-                                                    &none   &none   &none
-                                                                &none   &none
-            >;
-        };
+    bt_layer: bt_layer {
+        bindings = <
+            &none &none &none &none &bootloader
+            &none &none &none &none &bt BT_CLR
+            &none &none &bt BT_SEL0 &bt BT_SEL1 &bt BT_SEL2
+            &none &none &none &none &none
+                               &none &none &none
+                                       &none &none
+        >;
     };
 };
