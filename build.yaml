@@ -19,5 +19,5 @@
 #
 ---
 include:
-  - board: rpi_pico_w
+  - board: rpi_pico2
     shield: cusskeys
