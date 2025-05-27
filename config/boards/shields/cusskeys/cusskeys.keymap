@@ -11,7 +11,7 @@
             bindings = <
                 &kp N1    &kp N2      &kp N3      &kp N4      &mo &bt_layer_label // Reference bt_layer by label
                 &kp Q     &kp W       &kp E       &kp R       &kp T
-                &kp A     &kp S       &kp D       &kp Y       &kp I
+                &kp A     &kp S       &kp D       &kp Y       &kp J
                 &kp LSFT  &kp COMMA   &kp DOT     &kp SLASH   &kp QMARK
                                       &kp LCTRL   &kp SPACE   &kp BSPC
                                                   &kp LALT    &kp DEL
