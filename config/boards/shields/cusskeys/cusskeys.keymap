@@ -13,7 +13,7 @@
                 &kp Q     &kp W       &kp E       &kp R       &kp T
                 &kp A     &kp S       &kp D       &kp Y       &kp J
                 &kp LSFT  &kp COMMA   &kp DOT     &kp SLASH   &kp QMARK
-                &kp LCTRL   &kp N   &kp BSPC    &trans    &trans
+                &kp Z   &kp N   &kp T    &kp I    &kp Y
                 &kp LALT    &kp DEL    &trans    &trans    &trans
             >;
         };
