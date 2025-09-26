@@ -9,12 +9,12 @@
 
         default_layer_label: default_layer { // Label for the node
             bindings = <
-                &kp N1    &kp N2      &kp N3      &kp N4      &mo 1 // Reference bt_layer by label
+                &kp N1    &kp N2      &kp N3      &kp N4      &mo 1
                 &kp Q     &kp W       &kp E       &kp R       &kp T
                 &kp A     &kp S       &kp D       &kp Y       &kp J
                 &kp LSFT  &kp COMMA   &kp DOT     &kp SLASH   &kp QMARK
-                &kp Z   &kp N   &kp T    &kp I    &kp Y
-                &kp LALT    &kp DEL    &trans    &trans    &trans
+                                      &kp Z       &kp N       &kp G
+                                                  &kp F      &kp P
             >;
         };
 
